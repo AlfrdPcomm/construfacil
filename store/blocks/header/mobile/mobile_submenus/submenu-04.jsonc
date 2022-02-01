@@ -1,0 +1,29 @@
+{
+  "menu-item#mobile_departamento-04":{
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Automotriz",
+        "text": "Automotriz"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu.accordion#mobile_departamento-04"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile_departamento-04":{
+    "children":[
+      "vtex.menu@2.x:menu#mobile_submenu-04"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_submenu-04":{
+    "props":{
+      "blockClass": "submenuAccordion",
+      "categoryId": 57,
+      "orientation": "vertical"
+    }
+  }
+}

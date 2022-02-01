@@ -1,0 +1,29 @@
+{
+  "menu-item#mobile_departamento-07": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Electrico y Iluminación",
+        "text": "Electrico y Iluminación"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu.accordion#mobile_departamento-07"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile_departamento-07":{
+    "children":[
+      "vtex.menu@2.x:menu#mobile_submenu-07"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_submenu-07":{
+    "props":{
+      "blockClass": "submenuAccordion",
+      "categoryId": 70,
+      "orientation": "vertical"
+    }
+  }
+}

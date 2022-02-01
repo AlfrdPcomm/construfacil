@@ -1,0 +1,12 @@
+@import './variables';
+
+.container{
+  padding: 0;
+  .reviewsHeading{
+    display: none;
+  }
+  .loginLink{
+    color: $primaryColor;
+    padding-left: 0;
+  }
+}

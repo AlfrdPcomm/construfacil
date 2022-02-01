@@ -1,0 +1,197 @@
+@import './variables';
+
+.styledLinkContent--desktop-department-item{
+  font-size: $fontMenuSize;
+  &:hover{
+    color: $secondaryColor;
+  }
+}
+
+.styledLinkContainer--menu-footer{
+  margin: 0!important;
+  font-size: 14px;
+  line-height: 18px;
+  .styledLinkContent{
+    color: white;
+    display: block;
+    word-wrap: break-word;
+    white-space: break-spaces;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.menuContainerNav--menu-desktop{
+  position: relative;
+  .submenuContainer{
+    position: initial;
+    .submenuWrapper{
+      width: 100%;
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+      border: none;
+      margin-left: 0;
+      .submenu{
+        border: none;
+        .menuContainer{
+          :first-child{
+            .styledLinkContent{
+              font-weight: 700;
+              color: $primaryColor;
+            }
+          }
+          :not(:first-child){
+            .styledLinkContent{
+              color: $subMenuItemColor;
+              font-weight: normal;
+              &:hover{
+                color: $subMenuItemColorHover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menuItem--submenu-right{
+  .submenuWrapper{
+    right: 0px;
+    left: initial;
+  }
+}
+
+.menuContainerNav--footer-menu-mobile{
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+  .menuItem{
+    .styledLinkContainer{
+      .styledLink{
+        display: block;
+        .styledLinkContent{
+          color: white;
+          justify-content: center;
+          position: relative;
+          .accordionIcon{
+            position: absolute;
+            right: 0;
+            font-size: 0;
+            &::before{
+              content: "";
+              display: block;
+              position: relative;
+              top: 5px;
+              background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 0L7 5L12 0L14 1L7 8L0 1L2 0Z' fill='white'/%3E%3C/svg%3E%0A");
+              width: 14px;
+              height: 8px;
+            }
+          }
+        }
+      }
+    }
+    .submenuAccordion{
+      padding-top: 10px;
+      justify-content: center;
+    }
+    &.menuItem--isOpen{
+      .accordionIcon{
+        &::before{
+          transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  &.menuContainerNav--last{
+    border: none;
+    padding-bottom: 0;
+  }
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--row-menu){
+  .menuItem{
+    .styledLinkContainer{
+      .styledLinkContent{
+        font-size: 16px;
+        font-weight: 500;
+        &:hover{
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+}
+
+.submenu--desktop-submenu{
+  :global(.vtex-flex-layout-0-x-flexRowContent){
+    display: flex;
+    row-gap: 25px;
+    flex-wrap: wrap;
+  }
+}
+
+.menuContainer--mobileMainMenu{
+  .menuItem{
+    width: 100%;
+    &.menuItem--isOpen{
+      .styledLinkContent{
+        border-color: white!important;
+        color: $tertiaryColor;
+        .accordionIcon--isOpen{
+          color: $tertiaryColor!important;
+        }
+      }
+    }
+    .menuItemInnerDiv{
+      .styledLinkContainer{
+        margin: 0;
+        padding: 0;
+        .styledLinkContent{
+          display: flex;
+          align-items: center;
+          padding: 0 3px;
+          height: 45px;
+          border-bottom: 1px solid #F0F0F0;
+          font-weight: 500;
+          font-size: 18px;
+          font-family: "Roboto","Helvetica","Arial";
+        }
+        .accordionIcon{
+          color: black;
+          font-weight: 400;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .submenuAccordion{
+    padding: 10px 0 0 0;
+    .menuContainerNav{
+      width: 100%;
+      .menuContainer{
+        .styledLinkContainer{
+          margin: 0;
+          .styledLinkContent{
+            padding: 0 3px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(73, 73, 73, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.menuContainer--mobileMainMenu .menuItem {
+  width: 100%;
+}
+
+.submenu--desktop-submenu{
+  padding-bottom: 15px;
+}

@@ -1,0 +1,32 @@
+{
+  "flex-layout.row#pitbar": {
+    "children": [
+      "image#construfacil-pitbar"
+      //"image#club-del-experto-pitbar"
+    ],
+    "props": {
+      "blockClass":["centralizer","pitbar"],
+      "fullWidth": "true",
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true
+    }
+  },
+  "image#construfacil-pitbar":{
+    "props":{
+      "src": "assets/logo-construfacil-pitbar.png",
+      "blockClass":["img-pitbar","active-item"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "image#club-del-experto-pitbar":{
+    "props":{
+      "src": "assets/logo-club-del-experto-pitbar.png",
+      "blockClass":["img-pitbar"],
+      "link":{
+        "url":"/"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "flex-layout.row#content-banner":{
+    "children":[
+      "list-context.image-list#banner-content"
+    ],
+    "props":{
+      "blockClass":["img-content-banner"]
+    }
+  },
+  "list-context.image-list#banner-content": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 490,
+      "images": [
+        {
+          "image": "assets/banners/BANNER-REGALO.jpg",
+          "mobileImage": "assets/banners/mobile_banner-content.jpg"
+        }
+      ]
+    }
+  }
+}

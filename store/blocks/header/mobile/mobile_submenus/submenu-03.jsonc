@@ -1,0 +1,29 @@
+{
+  "menu-item#mobile_departamento-03": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Adhesivos y Aditivos",
+        "text": "Adhesivos y Aditivos"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu.accordion#mobile_departamento-03"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile_departamento-03":{
+    "children":[
+      "vtex.menu@2.x:menu#mobile_submenu-03"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_submenu-03":{
+    "props":{
+      "blockClass": "submenuAccordion",
+      "categoryId": 46,
+      "orientation": "vertical"
+    }
+  }
+}

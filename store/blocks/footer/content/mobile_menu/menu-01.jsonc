@@ -1,0 +1,48 @@
+{
+  "vtex.menu@2.x:menu#footer-mobile-informacion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-menu-mobile"
+    },
+    "children": [
+      "menu-item#mobile-informacion"
+    ]
+  },
+  "menu-item#mobile-informacion": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Ajuda e Suporte",
+        "text": "Ajuda e Suporte"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#mobile-support"]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-support": {
+    "children": ["vtex.menu@2.x:menu#mobile-support-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#mobile-support-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-submenu-mobile",
+      "items":[{
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "Example",
+          "text": "Example"
+        }
+      }]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#col01-footer",
+      "flex-layout.col#col02-footer",
+      "flex-layout.col#col03-footer",
+      "flex-layout.col#col04-footer"
+    ],
+    "props": {
+      "blockClass": ["footer-menu-desktop-row","centralizer"],
+      "preventHorizontalStretch":false
+    }
+  },
+
+  "flex-layout.row#footer-3-desktop": {
+    "children": ["rich-text#footer"],
+    "props": {
+      "blockClass": ["centralizer","credits"]
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "textPosition":"CENTER",
+      "textAlignment":"CENTER",
+      "text": "©DIVISIÓN DMC GUATEMALA, S.A. TODOS LOS DERECHOS RESERVADOS",
+      "blockClass": "footer-copyright"
+    }
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#mobile_footer-row01",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+
+  "flex-layout.row#mobile_footer-row01":{
+    "children":[
+      "flex-layout.row#mobile_col-social"
+    ],
+    "props":{
+      "blockClass": ["mobile_row-menu01-footer","centralizer"]
+    }
+  },
+
+  "flex-layout.row#mobile_col-social":{
+    "children":[
+      "logo#footer",
+      "flex-layout.row#social"
+    ],
+    "props":{
+      "preventVerticalStretch":true
+    }
+  },
+
+  "flex-layout.row#2-footer-mobile": {
+    "children": ["flex-layout.col#footer-1-mobile"],
+    "props": {
+      "blockClass": ["payment-methods","centralizer"],
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "blockClass":"footer-mobile-1"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile-informacion",
+      "vtex.menu@2.x:menu#footer-mobile-institucional",
+      "vtex.menu@2.x:menu#footer-mobile-contacto"
+    ]
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "textPosition":"CENTER",
+      "textAlignment":"CENTER",
+      "text": "©DIVISIÓN DMC GUATEMALA, S.A. TODOS LOS DERECHOS RESERVADOS",
+      "blockClass": "footer-copyright"
+    }
+  }
+}

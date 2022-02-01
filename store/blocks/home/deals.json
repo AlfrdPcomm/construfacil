@@ -1,0 +1,133 @@
+{
+  "flex-layout.row#deals": {
+    "children": [
+      "flex-layout.col#col-deals"
+    ],
+    "props": {
+      "blockClass": ["centralizer","deals"]
+    }
+  },
+
+  "flex-layout.col#col-deals":{
+    "children":[
+      "rich-text#title-deals",
+      "flex-layout.row#deals-list"
+    ],
+    "props":{
+      "preventVerticalStretch":true,
+      "blockClass": ["deals-col"]
+    }
+  },
+
+  "rich-text#title-deals":{
+    "props":{
+      "text":"Tus compras seguras y faciles",
+      "blockClass":"title-section",
+      "textPosition":"CENTER",
+      "textAlignment":"CENTER"
+    }
+  },
+
+  "flex-layout.row#deals-list":{
+    "children":[
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4"
+    ],
+    "props":{
+      "horizontalAlign": "center",
+      "preventHorizontalStretch":true,
+      "blockClass": ["deals-list"]
+    }
+  },
+
+  "flex-layout.col#deals1": {
+    "children": [
+      "image#deal1",
+      "rich-text#deal1"
+    ],
+    "props":{
+      "blockClass": ["deals-subcol","deals-col-1"]
+    }
+  },
+  "image#deal1": {
+    "props": {
+      "src": "assets/icons/icon-shipping.svg",
+      "maxHeight": "35px",
+      "blockClass":"img-deals"
+    }
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "*Envío* a \n Domicilio",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals2": {
+    "children": [
+      "image#deal2",
+      "rich-text#deal2"
+    ],
+    "props":{
+      "blockClass": ["deals-subcol","deals-col-2"]
+    }
+  },
+  "image#deal2": {
+    "props": {
+      "src": "assets/icons/icon-pickup.svg",
+      "maxHeight": "35px",
+      "blockClass":"img-deals"
+    }
+  },
+  "rich-text#deal2": {
+    "props": {
+      "text": "*Recoge* \n en tienda",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals3": {
+    "children": [
+      "image#deal3",
+      "rich-text#deal3"
+    ],
+    "props":{
+      "blockClass": ["deals-subcol","deals-col-2"]
+    }
+  },
+  "image#deal3": {
+    "props": {
+      "src": "assets/icons/icon-payment.svg",
+      "maxHeight": "35px",
+      "blockClass":"img-deals"
+    }
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "*Paga* en \n Visa Cuotas",
+      "blockClass": "deals"
+    }
+  },
+  "flex-layout.col#deals4": {
+    "children": [
+      "image#deal4",
+      "rich-text#deal4"
+    ],
+    "props":{
+      "blockClass": ["deals-subcol","deals-col-4"]
+    }
+  },
+  "image#deal4": {
+    "props": {
+      "src": "assets/icons/icon-security.svg",
+      "maxHeight": "35px",
+      "blockClass":"img-deals"
+    }
+  },
+  "rich-text#deal4": {
+    "props": {
+      "text": "*Compra* \n Segura",
+      "blockClass": "deals"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.wrapper{
+  align-items: center;
+}
+.paragraph{
+  font-size: 14px;
+  align-items: inherit;
+}
+
+:global(.vtex-product-summary-2-x-element) .paragraph{
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}

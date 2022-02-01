@@ -1,0 +1,34 @@
+{
+  "flex-layout.row#highlights":{
+    "children":[
+      "flex-layout.col#col01-highlight",
+      "flex-layout.col#col02-highlight"
+    ],
+    "props":{
+      "blockClass":["centralizer","highlights","line"]
+    }
+  },
+  "flex-layout.col#col01-highlight":{
+    "children":[
+      "image#banner-highlight"
+    ],
+    "props":{
+      "blockClass":"col01-highlight",
+      "width":"35%"
+    }
+  },
+  "image#banner-highlight":{
+    "props":{
+      "src":"assets/banners/home-ofertas-destacadas.jpg",
+      "blockClass":"banner-highlight"
+    }
+  },
+  "flex-layout.col#col02-highlight":{
+    "children":[
+      "flex-layout.row#shelf-02"
+    ],
+    "props":{
+      "blockClass":"col02-highlight"
+    }
+  }
+}

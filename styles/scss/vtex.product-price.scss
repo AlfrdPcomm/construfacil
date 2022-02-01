@@ -1,0 +1,49 @@
+@import './variables';
+
+.listPriceValue--summary{
+  display: block;
+  .currencyContainer{
+    font-size: 16px;
+    color: $listPrice;
+  }
+}
+
+.sellingPriceValue--summary{
+  .currencyContainer{
+    font-size: 24px;
+    color: $primaryColor;
+  }
+}
+
+.listPrice{
+  .listPriceValue{
+    .currencyContainer{
+      color: #C3C3C3;
+      font-size: 18px;
+      display: inline-block;
+      margin-bottom: 10px;
+      text-decoration: line-through;
+      @media(max-width: 1024px){
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.sellingPrice{
+  .sellingPriceValue{
+    .currencyContainer{
+      color: $primaryColor;
+      font-size: 30px;
+      display: inline-block;
+      @media(max-width: 1024px){
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+.installments--summary{
+  margin-bottom: 15px;
+  display: block;
+}

@@ -1,0 +1,29 @@
+{
+  "menu-item#mobile_departamento-11": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Hogar y Jardin",
+        "text": "Hogar y Jardin"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu.accordion#mobile_departamento-11"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile_departamento-11":{
+    "children":[
+      "vtex.menu@2.x:menu#mobile_submenu-11"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_submenu-11":{
+    "props":{
+      "blockClass": "submenuAccordion",
+      "categoryId": 149,
+      "orientation": "vertical"
+    }
+  }
+}

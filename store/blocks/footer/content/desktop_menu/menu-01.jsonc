@@ -1,0 +1,40 @@
+{
+  "flex-layout.col#col01-footer":{
+    "children": [
+      "rich-text#title-col01-footer",
+      "vtex.menu@2.x:menu#footer-informacion"
+    ],
+    "props": {
+      "width": "12%",
+      "preventVerticalStretch": true,
+      "blockClass": ["footer-menu-desktop-col","col01"]
+    }
+  },
+
+  "rich-text#title-col01-footer":{
+    "props":{
+      "text": "Información",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-informacion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass":["menu-footer","menu-footer-informacion"],
+      "items":[
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/quienes-somos",
+            "noFollow": false,
+            "tagTitle": "Example",
+            "text": "Example"
+          }
+        }
+      ]
+    }
+  }
+
+}

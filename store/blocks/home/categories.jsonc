@@ -1,0 +1,189 @@
+{
+  "flex-layout.row#categories": {
+    "children": [
+      "flex-layout.col#col-categories"
+    ],
+    "props": {
+      "blockClass": ["centralizer","categories","line"]
+    }
+  },
+
+  "flex-layout.col#col-categories":{
+    "children":[
+      "rich-text#title-categories",
+      "flex-layout.row#categories-list",
+      "link#all-categories"
+    ],
+    "props":{
+      "preventVerticalStretch":true,
+      "blockClass": ["categories-col"]
+    }
+  },
+
+  "link#all-categories":{
+    "props":{
+      "label":"Todas las categorías",
+      "blockClass":"category-home-link"
+    }
+  },
+
+  "rich-text#title-categories":{
+    "props":{
+      "text":"Tus compras seguras y faciles",
+      "blockClass":"title-section",
+      "textPosition":"CENTER",
+      "textAlignment":"CENTER"
+    }
+  },
+
+  "flex-layout.row#categories-list":{
+    "children":[
+      "flex-layout.col#categories1",
+      "flex-layout.col#categories2",
+      "flex-layout.col#categories3",
+      "flex-layout.col#categories4",
+      "flex-layout.col#categories5"
+    ],
+    "props":{
+      "horizontalAlign": "center",
+      "preventHorizontalStretch":true,
+      "blockClass": ["categories-list"]
+    }
+  },
+
+  "flex-layout.col#categories1": {
+    "children": [
+      "image#category1",
+      "rich-text#category1"
+    ],
+    "props":{
+      "blockClass": ["categories-subcol","categories-col-1"]
+    }
+  },
+  "image#category1": {
+    "props": {
+      "src": "assets/categorias/categoria-acabados.png",
+      "maxHeight": "220px",
+      "blockClass":"img-categories",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "rich-text#category1": {
+    "props": {
+      "text": "## [acabados](/acabados)",
+      "blockClass": "category-home",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
+    }
+  },
+  "flex-layout.col#categories2": {
+    "children": [
+      "image#category2",
+      "rich-text#category2"
+    ],
+    "props":{
+      "blockClass": ["categories-subcol","categories-col-2"]
+    }
+  },
+  "image#category2": {
+    "props": {
+      "src": "assets/categorias/categoria-aceros.png",
+      "maxHeight": "220px",
+      "blockClass":"img-categories",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "rich-text#category2": {
+    "props": {
+      "text": "## [aceros](/aceros)",
+      "blockClass": "category-home",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
+    }
+  },
+  "flex-layout.col#categories3": {
+    "children": [
+      "image#category3",
+      "rich-text#category3"
+    ],
+    "props":{
+      "blockClass": ["categories-subcol","categories-col-2"]
+    }
+  },
+  "image#category3": {
+    "props": {
+      "src": "assets/categorias/categoria-adhesivos.png",
+      "maxHeight": "220px",
+      "blockClass":"img-categories",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "rich-text#category3": {
+    "props": {
+      "text": "## [Adhesivos](/adhesivos)",
+      "blockClass": "category-home",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
+    }
+  },
+  "flex-layout.col#categories4": {
+    "children": [
+      "image#category4",
+      "rich-text#category4"
+    ],
+    "props":{
+      "blockClass": ["categories-subcol","categories-col-4"]
+    }
+  },
+  "image#category4": {
+    "props": {
+      "src": "assets/categorias/categoria-automotriz.png",
+      "maxHeight": "220px",
+      "blockClass":"img-categories",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "rich-text#category4": {
+    "props": {
+      "text": "## [Automotriz](/automotriz)",
+      "blockClass": "category-home",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
+    }
+  },
+  "flex-layout.col#categories5": {
+    "children": [
+      "image#category5",
+      "rich-text#category5"
+    ],
+    "props":{
+      "blockClass": ["categories-subcol","categories-col-5"]
+    }
+  },
+  "image#category5": {
+    "props": {
+      "src": "assets/categorias/categoria-cemento.png",
+      "maxHeight": "220px",
+      "blockClass":"img-categories",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "rich-text#category5": {
+    "props": {
+      "text": "## [Cemento](/cemento)",
+      "blockClass": "category-home",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER"
+    }
+  }
+}

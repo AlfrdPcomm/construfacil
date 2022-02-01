@@ -1,0 +1,29 @@
+{
+  "menu-item#mobile_departamento-05": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Cementos",
+        "text": "Cementos"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu.accordion#mobile_departamento-05"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile_departamento-05":{
+    "children":[
+      "vtex.menu@2.x:menu#mobile_submenu-05"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_submenu-05":{
+    "props":{
+      "blockClass": "submenuAccordion",
+      "categoryId": 61,
+      "orientation": "vertical"
+    }
+  }
+}

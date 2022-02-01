@@ -1,0 +1,95 @@
+{
+  "sticky-layout#header-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#header-desktop",
+      "flex-layout.row#header-menu-desktop"
+    ]
+  },
+  "flex-layout.row#header-desktop": {
+    "props": {
+      "blockClass": ["centralizer","main-header"],
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#header-branches",
+      "flex-layout.col#spacer",
+      "flex-layout.col#search-desktop",
+      "flex-layout.col#login",
+      "flex-layout.col#minicart"
+    ]
+  },
+
+  /*LOGO*/
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo-construfacil.png",
+      "width": "350"
+    }
+  },
+
+  /*BRANCHES*/
+
+  "flex-layout.col#header-branches":{
+    "children":[
+      "link#branches"
+    ],
+    "props":{
+      "blockClass":"col-branches"
+    }
+  },
+  "link#branches": {
+    "props": {
+      "href": "/tiendas",
+      "label": "Sucursales",
+      "blockClass": "link-branches"
+    }
+  },
+
+  /*SEARCH*/
+
+  "flex-layout.col#search-desktop":{
+    "children":["search-bar#desktop"],
+    "props":{
+      "width":"grow",
+      "blockClass":"col-header-search"
+    }
+  },
+  "search-bar#desktop": {
+    "blocks": ["autocomplete-result-list.v2#desktop"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "autocomplete-result-list.v2#desktop": {
+    "blocks": ["product-summary.shelf"]
+  },
+
+  /*MENU*/
+
+  "flex-layout.row#header-menu-desktop":{
+    "children":[
+      "vtex.menu@2.x:menu#category-menu"
+    ],
+    "props":{
+      "blockClass":["centralizer","row-menu"]
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+@import './variables';
+
+.container--tabs{
+  .listContainer{
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .listItem{
+      padding: 0;
+      margin: 0;
+      :global(.vtex-button){
+        border: none;
+        border-radius: $radius;
+        :global(.vtex-button__label){
+          color: black;
+          font-weight: normal;
+        }
+      }
+      &.listItemActive{
+        :global(.vtex-button){
+          background: rgba(3, 74, 166, 0.3);
+        }
+      }
+    }
+  }
+}

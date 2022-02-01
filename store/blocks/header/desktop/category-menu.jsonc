@@ -1,0 +1,188 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass":"menu-desktop"
+    },
+    "children": [
+      "menu-item#department-01",
+      "menu-item#department-02",
+      "menu-item#department-03",
+      "menu-item#department-04",
+      "menu-item#department-05"
+    ]
+  },
+  "menu-item#department-01": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/acabados",
+        "noFollow": false,
+        "tagTitle": "Categorías",
+        "text": "Categorías"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#department-01"
+    ]
+  },
+  "menu-item#department-02": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/promociones",
+        "noFollow": false,
+        "tagTitle": "Promociones",
+        "text": "Promociones"
+      }
+    },
+    "blocks": [
+      //"vtex.menu@2.x:submenu#department-02"
+    ]
+  },
+  "menu-item#department-03": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/como-comprar",
+        "noFollow": false,
+        "tagTitle": "Cómo Comprar",
+        "text": "Cómo Comprar"
+      }
+    },
+    "blocks": [
+      //"vtex.menu@2.x:submenu#department-03"
+    ]
+  },
+  "menu-item#department-04": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/servicios",
+        "noFollow": false,
+        "tagTitle": "Servicios",
+        "text": "Servicios"
+      }
+    },
+    "blocks": [
+      //"vtex.menu@2.x:submenu#department-04"
+    ]
+  },
+  "menu-item#department-05": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/conocenos",
+        "noFollow": false,
+        "tagTitle": "Conócenos",
+        "text": "Conócenos"
+      }
+    },
+    "blocks": [
+      //"vtex.menu@2.x:submenu#department-05"
+    ]
+  },
+  "menu-item#department-06": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cerrajeria",
+        "noFollow": false,
+        "tagTitle": "Cerrajeria",
+        "text": "Cerrajeria"
+      }
+    },
+    "blocks": [
+      //"vtex.menu@2.x:submenu#department-06"
+    ]
+  },
+  "menu-item#department-07": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/electrico-e-iluminacion",
+        "noFollow": false,
+        "tagTitle": "Eléctrico e Iluminación",
+        "text": "Eléctrico e Iluminación"
+      }
+    },
+    "blocks": [
+      //"vtex.menu@2.x:submenu#department-07"
+    ]
+  },
+  "menu-item#department-08": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["submenu-right"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/fijacion-y-herrajes",
+        "noFollow": false,
+        "tagTitle": "Fijación y Herrajes",
+        "text": "Fijación y Herrajes"
+      }
+    },
+    "blocks": [
+      //"vtex.menu@2.x:submenu#department-08"
+    ]
+  },
+  "menu-item#department-09": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["submenu-right"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/forestal",
+        "noFollow": false,
+        "tagTitle": "Forestal",
+        "text": "Forestal"
+      }
+    },
+    "blocks": [
+      //"vtex.menu@2.x:submenu#department-09"
+    ]
+  },
+  "menu-item#department-10": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["submenu-right"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/herramientas",
+        "noFollow": false,
+        "tagTitle": "Herramientas",
+        "text": "Herramientas"
+      }
+    },
+    "blocks": [
+      //"vtex.menu@2.x:submenu#department-10"
+    ]
+  }
+}

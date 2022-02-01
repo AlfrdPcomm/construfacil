@@ -1,0 +1,29 @@
+{
+  "menu-item#mobile_departamento-12": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "MDC",
+        "text": "MDC"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu.accordion#mobile_departamento-12"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile_departamento-12":{
+    "children":[
+      "vtex.menu@2.x:menu#mobile_submenu-12"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_submenu-12":{
+    "props":{
+      "blockClass": "submenuAccordion",
+      "categoryId": 164,
+      "orientation": "vertical"
+    }
+  }
+}

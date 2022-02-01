@@ -1,0 +1,29 @@
+{
+  "menu-item#mobile_departamento-09": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Forestal",
+        "text": "Forestal"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu.accordion#mobile_departamento-09"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile_departamento-09":{
+    "children":[
+      "vtex.menu@2.x:menu#mobile_submenu-09"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_submenu-09":{
+    "props":{
+      "blockClass": "submenuAccordion",
+      "categoryId": 116,
+      "orientation": "vertical"
+    }
+  }
+}

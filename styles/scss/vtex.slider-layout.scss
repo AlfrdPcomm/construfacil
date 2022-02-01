@@ -1,0 +1,34 @@
+@import './variables';
+
+.sliderTrack--highlight-shelf{
+  display: grid;
+  column-gap: 30px;
+  row-gap: 30px;
+  @media(min-width: 1024px){
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media(max-width: 1024px) and (min-width: 541px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media(max-width: 640px){
+    display: flex;
+    column-gap: initial;
+    row-gap: initial;
+  }
+}
+
+.sliderLayoutContainer--highlight-shelf{
+  @media(min-width: 1024px){
+    padding: 0 0 0 15px!important;
+  }
+  @media(max-width: 1024px){
+    padding: 0!important;
+  }
+  .slide--highlight-shelf{
+    width: 100%!important;
+  }
+}
+
+.sliderTrackContainer{
+  padding-bottom: 25px;
+}

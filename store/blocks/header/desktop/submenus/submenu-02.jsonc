@@ -1,0 +1,46 @@
+{
+  "vtex.menu@2.x:submenu#department-02": {
+    "props": {
+      "width": "auto",
+      "blockClass":"desktop-submenu"
+    },
+    "children": [
+      "flex-layout.row#row-submenu-02"
+    ]
+  },
+  "flex-layout.row#row-submenu-02":{
+    "children":[
+      "vtex.menu@2.x:menu#department-02-cat-01",
+      "vtex.menu@2.x:menu#department-02-cat-02",
+      "vtex.menu@2.x:menu#department-02-cat-03",
+      "vtex.menu@2.x:menu#department-02-cat-04"
+    ],
+    "props":{
+      "preventHorizontalStretch":true
+    }
+  },
+  "vtex.menu@2.x:menu#department-02-cat-01": {
+    "props": {
+      "orientation": "vertical",
+      "categoryId": "44"
+    }
+  },
+  "vtex.menu@2.x:menu#department-02-cat-02": {
+    "props": {
+      "orientation": "vertical",
+      "categoryId": "26"
+    }
+  },
+  "vtex.menu@2.x:menu#department-02-cat-03": {
+    "props": {
+      "orientation": "vertical",
+      "categoryId": "34"
+    }
+  },
+  "vtex.menu@2.x:menu#department-02-cat-04": {
+    "props": {
+      "orientation": "vertical",
+      "categoryId": "41"
+    }
+  }
+}

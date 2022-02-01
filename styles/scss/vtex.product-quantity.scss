@@ -1,0 +1,24 @@
+@import './variables';
+
+.quantitySelectorContainer{
+  .quantitySelectorStepper{
+    :global(.vtex-numeric-stepper-container){
+      :global(.vtex-numeric-stepper__input),
+      :global(.vtex-numeric-stepper__plus-button),
+      :global(.vtex-numeric-stepper__minus-button){
+        height: $buyBtnAndQuantityHeight;
+        min-height: $buyBtnAndQuantityHeight;
+        max-height: $buyBtnAndQuantityHeight;
+      }
+      :global(.vtex-numeric-stepper__plus-button){
+        border-radius: 0 $radius $radius 0;
+      }
+      :global(.vtex-numeric-stepper__minus-button){
+        border-radius: $radius 0 0 $radius;
+        :global(.vtex-numeric-stepper__minus-button__text){
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+}

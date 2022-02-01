@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#newsletter":{
+    "children":[
+      "flex-layout.col#newsletter"
+    ],
+    "props":{
+      "preventVerticalStretch":true,
+      "horizontalAlign":"center",
+      "blockClass":["centralizer","newsletter","line"]
+    }
+  },
+  "flex-layout.col#newsletter":{
+    "children":[
+      "rich-text#title-newsletter",
+      "newsletter-form"
+    ],
+    "props":{
+      "preventVerticalStretch":true,
+      "horizontalAlign":"center",
+      "blockClass":"newsletter"
+    }
+  },
+  "rich-text#title-newsletter":{
+    "props":{
+      "text":"**Obtén un 5% en tu primera compra** *Registrate y forma parte de la comunidad Construfácil*",
+      "textAlignment":"CENTER",
+      "textPosition":"CENTER",
+      "blockClass":"title-newsletter"
+    }
+  },
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  }
+}

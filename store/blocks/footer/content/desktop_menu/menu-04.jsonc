@@ -1,0 +1,52 @@
+{
+  "flex-layout.col#col04-footer":{
+    "children": [
+      "rich-text#title-col04-footer",
+      "rich-text#content-col04-footer-address",
+      "rich-text#content-col04-footer-email",
+      "rich-text#content-col04-footer-tel01",
+      "rich-text#content-col04-footer-tel02"
+    ],
+    "props": {
+      "width": "20%",
+      "preventVerticalStretch": true,
+      "blockClass": ["footer-menu-desktop-col","col04"]
+    }
+  },
+
+  "rich-text#title-col04-footer":{
+    "props":{
+      "text": "Contacto",
+      "blockClass": "footerMenuTitle"
+    }
+  },
+
+  "rich-text#content-col04-footer-address":{
+    "props":{
+      "text": "Oficinas administrativas (Km. 16.5 Carretera a El Salvador, Fraijanes Guatemala)",
+      "blockClass": ["footerMenuContent4","address"]
+    }
+  },
+
+  "rich-text#content-col04-footer-email":{
+    "props":{
+      "text": "[soluciones@construfacil.com.gt](mailto:soluciones@construfacil.com.gt)",
+      "blockClass": ["footerMenuContent4","email"]
+    }
+  },
+
+  "rich-text#content-col04-footer-tel01":{
+    "props":{
+      "text": "[1785](tel:1785)",
+      "blockClass": ["footerMenuContent4","tel","tel01"]
+    }
+  },
+
+  "rich-text#content-col04-footer-tel02":{
+    "props":{
+      "text": "[3005-5504](tel:3005-5504)",
+      "blockClass": ["footerMenuContent4","tel","tel02"]
+    }
+  }
+
+}

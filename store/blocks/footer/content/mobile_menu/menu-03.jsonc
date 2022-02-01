@@ -1,0 +1,48 @@
+{
+  "vtex.menu@2.x:menu#footer-mobile-contacto": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["footer-menu-mobile","last"]
+    },
+    "children": [
+      "menu-item#mobile-contacto"
+    ]
+  },
+  "menu-item#mobile-contacto": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "contacto",
+        "text": "contacto"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#mobile-contacto"]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-contacto": {
+    "children": ["vtex.menu@2.x:menu#mobile-contacto-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#mobile-contacto-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer-submenu-mobile",
+      "items":[{
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "Example",
+          "text": "Example"
+        }
+      }]
+    }
+  }
+}

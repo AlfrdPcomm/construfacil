@@ -1,0 +1,59 @@
+{
+  "drawer": {
+    "children": ["flex-layout.row#menu-header"],
+    "props": {
+      "blockClass": "menuDrawer",
+      "maxWidth": 384
+    }
+  },
+  "flex-layout.row#menu-header": {
+    "props": {
+      "blockClass": "menuHeader"
+    },
+    "children": ["flex-layout.col#menu-header"]
+  },
+  "flex-layout.col#menu-header": {
+    "children": [
+      "vtex.menu@2.x:menu#mobile-menu"
+    ],
+    "props": {
+      "blockClass": "drawerInnerCol"
+    }
+  },
+  "link#mobileOrderQuote":{
+    "props": {
+      "blockClass": ["quickOrderLink","mobileStoreLink"],
+      "href": "/compra-rapida/",
+      "label": "Cotizar"
+    }
+  },
+  "link#quick-order":{
+    "props": {
+      "blockClass": ["quickOrderLink","mobileStoreLink"],
+      "href": "/compra-rapida/",
+      "label": "Compra rápida"
+    }
+  },
+  "vtex.menu@2.x:menu#mobile-menu": {
+    "children": [
+      "menu-item#mobile_departamento-01",
+      "menu-item#mobile_departamento-02",
+      "menu-item#mobile_departamento-03",
+      "menu-item#mobile_departamento-04",
+      "menu-item#mobile_departamento-05",
+      "menu-item#mobile_departamento-06",
+      "menu-item#mobile_departamento-07",
+      "menu-item#mobile_departamento-08",
+      "menu-item#mobile_departamento-09",
+      "menu-item#mobile_departamento-10",
+      "menu-item#mobile_departamento-11",
+      "menu-item#mobile_departamento-12",
+      "menu-item#mobile_departamento-13",
+      "menu-item#mobile_departamento-14"
+    ],
+    "props":{
+      "orientation":"vertical",
+      "blockClass":"mobileMainMenu"
+    }
+  }
+}

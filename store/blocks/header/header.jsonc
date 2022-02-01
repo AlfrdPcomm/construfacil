@@ -1,0 +1,143 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#telemarkerting",
+      "flex-layout.row#pitbar",
+      "sticky-layout#header-desktop"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  /*LOGIN*/
+
+  "flex-layout.col#login":{
+    "children":["login"],
+    "props":{
+      "blockClass":"col-login"
+    }
+  },
+
+  /*MINICART*/
+
+  "flex-layout.col#minicart":{
+    "children":["minicart.v2"],
+    "props":{
+      "verticalAlign":"middle",
+      "blockClass":"col-minicart"
+    }
+  },
+
+  "flex-layout.row#desktop_category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#pitbar",
+      "sticky-layout#1-mobile"
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "children": [
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#2-mobile"
+    ],
+    "props":{
+      "blockClass":"sticky-header-mobile"
+    }
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "flex-layout.col#spacer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "flex-layout.col#col-mobile-filial",
+      "flex-layout.col#col-mobile-login",
+      "flex-layout.col#col-mobile-cart"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo-construfacil.png",
+      "width": "190"
+    }
+  },
+
+  "flex-layout.col#col-mobile-filial":{
+    "children":[
+      "link#header-filial"
+    ],
+    "props":{
+      "blockClass":["col-mobile-topbar","col-mobile-filial"]
+    }
+  },
+  "link#header-filial": {
+    "children":["image#icon-filial"],
+    "props": {
+      "blockClass":"link-header-filial",
+      "href": "/tiendas"
+    }
+  },
+  "image#icon-filial":{
+    "props":{
+      "src":"assets/icons/icon-geolocation.svg",
+      "blockClass":["icon-header-mobile","icon-geolocalizatoin"]
+    }
+  },
+  "flex-layout.col#col-mobile-login":{
+    "children":["login"],
+    "props":{
+      "blockClass":["col-mobile-topbar","col-mobile-login"]
+    }
+  },
+  "flex-layout.col#col-mobile-cart":{
+    "children":["minicart.v2"],
+    "props":{
+      "blockClass":["col-mobile-topbar","col-mobile-cart"]
+    }
+  },
+
+  "flex-layout.row#2-mobile":{
+    "children":[
+      "search-bar#mobile"
+    ],
+    "props":{
+      "blockClass":["centralizer","row-mobile-search"]
+    }
+  },
+  "search-bar#mobile": {
+    "blocks": ["autocomplete-result-list.v2#mobile"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "autocomplete-result-list.v2#mobile": {
+    "blocks": ["product-summary.shelf"],
+    "props":{
+      "autocompleteWidth": 100
+    }
+  }
+
+}

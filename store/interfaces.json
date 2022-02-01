@@ -1,0 +1,8 @@
+{
+  "short-description":{
+    "component":"ShortDescription"
+  },
+  "product-brand":{
+    "component":"ProductBrandName"
+  }
+}

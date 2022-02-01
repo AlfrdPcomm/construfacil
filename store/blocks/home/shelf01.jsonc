@@ -1,0 +1,32 @@
+{
+  "flex-layout.row#shelf-01":{
+    "children":[
+      "flex-layout.col#col-shelf-01"
+    ],
+    "props":{
+      "blockClass":["centralizer","shelf-01","line"],
+      "preventVerticalStretch":true
+    }
+  },
+  "flex-layout.col#col-shelf-01":{
+    "children":[
+      "rich-text#title_shelf-01",
+      "list-context.product-list#shelf-01"
+    ]
+  },
+  "rich-text#title_shelf-01":{
+    "props":{
+      "blockClass":["title-section","shelf-01"],
+      "text":"## Productos más vendidos",
+      "textPosition":"CENTER",
+      "textAlignment":"CENTER"
+    }
+  },
+  "list-context.product-list#shelf-01": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  }
+}

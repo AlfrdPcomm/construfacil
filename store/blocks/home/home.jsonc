@@ -1,0 +1,94 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#main-banners",
+      "flex-layout.row#deals",
+      "responsive-layout.desktop#home-gallery",
+      "responsive-layout.tablet#home-gallery",
+      "responsive-layout.phone#home-gallery",
+      "flex-layout.row#categories",
+      "flex-layout.row#shelf-01",
+      "flex-layout.row#brands",
+      "flex-layout.row#highlights",
+      "flex-layout.row#content-banner"
+    ]
+  },
+
+  "responsive-layout.desktop#home-gallery":{
+    "children":["flex-layout.row#gallery"],
+    "props":{
+      "blockClass":"home-gallery"
+    },
+    "title":"Desktop - Gallery"
+  },
+
+  "responsive-layout.phone#home-gallery":{
+    "children":["flex-layout.row#mobile-gallery"],
+    "props":{
+      "blockClass":"home-gallery"
+    },
+    "title":"Mobile - Gallery"
+  },
+
+  "responsive-layout.tablet#home-gallery":{
+    "children":["flex-layout.row#mobile-gallery"],
+    "props":{
+      "blockClass":"home-gallery"
+    },
+    "title":"Tablet - Gallery"
+  },
+
+  "flex-layout.row#main-banners":{
+    "children":[
+      "list-context.image-list#demo"
+    ],
+    "props":{
+      "blockClass":["main-banners","line"]
+    }
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 700,
+      "images": [
+        {
+          "image": "assets/banners/BANNER-BICENTENARIO.jpg",
+          "mobileImage": "assets/banners/mobile_main-banner.jpg"
+        },
+        {
+          "image": "assets/banners/BANNER-BICENTENARIO.jpg",
+          "mobileImage": "assets/banners/mobile_main-banner.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel-mainBanners"
+    }
+  },
+
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "showPaginationDots":"mobileOnly",
+      "showNavigationArrows":"always",
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+
+}

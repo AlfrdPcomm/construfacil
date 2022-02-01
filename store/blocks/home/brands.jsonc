@@ -1,0 +1,86 @@
+{
+  "flex-layout.row#brands":{
+    "children":[
+      "flex-layout.col#col-brands"
+    ],
+    "props":{
+      "blockClass":["centralizer","brands","line"],
+      "preventVerticalStretch":true
+    }
+  },
+  "flex-layout.col#col-brands":{
+    "children":[
+      "rich-text#title_brands",
+      "list-context.image-list#brands"
+    ]
+  },
+  "rich-text#title_brands":{
+    "props":{
+      "blockClass":"title-section",
+      "textPosition":"CENTER",
+      "textAlignment":"CENTER",
+      "text":"## Solo las mejores marcas"
+    }
+  },
+  "list-context.image-list#brands": {
+    "children": ["slider-layout#brands"],
+    "props": {
+      "height": 120,
+      "images": [
+        {
+          "image": "assets/brands/AQUAPLAS.png",
+          "mobileImage": "assets/brands/AQUAPLAS.png"
+        },
+        {
+          "image": "assets/brands/CEMPRO-NUEVO.jpg",
+          "mobileImage": "assets/brands/CEMPRO-NUEVO.jpg"
+        },
+        {
+          "image": "assets/brands/HORCALSA.jpg",
+          "mobileImage": "assets/brands/HORCALSA.jpg"
+        },
+        {
+          "image": "assets/brands/IMAGOTIPO-MEZCLAS-LISTAS.jpg",
+          "mobileImage": "assets/brands/IMAGOTIPO-MEZCLAS-LISTAS.jpg"
+        },
+        {
+          "image": "assets/brands/Logo-Gressus.png",
+          "mobileImage": "assets/brands/Logo-Gressus.png"
+        },
+        {
+          "image": "assets/brands/LOGO-TOTAL.jpg",
+          "mobileImage": "assets/brands/LOGO-TOTAL.jpg"
+        },
+        {
+          "image": "assets/brands/Milwaukee.jpg",
+          "mobileImage": "assets/brands/Milwaukee.jpg"
+        },
+        {
+          "image": "assets/brands/Sika_logo.png",
+          "mobileImage": "assets/brands/Sika_logo.png"
+        },
+        {
+          "image": "assets/brands/teka-logo-png-transparent.png",
+          "mobileImage": "assets/brands/teka-logo-png-transparent.png"
+        },
+        {
+          "image": "assets/brands/Truper.png",
+          "mobileImage": "assets/brands/Truper.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#brands": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "carousel-brands"
+    }
+  }
+}

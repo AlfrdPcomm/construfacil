@@ -1,0 +1,42 @@
+@import './variables';
+
+.filters--layout{
+  .filter__container{
+    border-bottom: 2px solid $primaryColor;
+    margin-bottom: 10px;
+    &.filter__container--title{
+      border: none!important;
+    }
+  }
+  .filterItem{
+    :global(.vtex-checkbox__line-container){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      :global(.vtex-checkbox__inner-container){
+        border: 1px solid $primaryColor;
+      }
+    }
+  }
+}
+
+.galleryTitle--layout{
+  font-size: 16px;
+  @media(min-width: 1025px){
+    margin-left: 2.5rem;
+  }
+}
+
+.gallery--search-gallery{
+  @media(min-width: 1025px){
+    padding-left: 2rem;
+  }
+}
+
+.orderByButton{
+  padding-top: 0;
+}
+
+.orderByText{
+  line-height: 38px;
+}

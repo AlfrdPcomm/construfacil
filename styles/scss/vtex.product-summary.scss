@@ -1,0 +1,19 @@
+@import './variables';
+
+.containerNormal{
+  overflow: visible;
+  .element{
+    .nameContainer{
+      padding: 10px 0 5px;
+    }
+    .imageContainer{
+      border-radius: $radius;
+      overflow: hidden;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+      .imageNormal{
+        display: block;
+        border-radius: $radius;
+      }
+    }
+  }
+}

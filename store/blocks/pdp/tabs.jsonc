@@ -1,0 +1,89 @@
+{
+  "tab-layout#pdp":{
+    "children": [
+      "tab-list#pdp",
+      "tab-content#pdp"
+    ],
+    "props": {
+      "blockClass": ["tabs","tabs-home"],
+      "defaultActiveTabId": "tab01"
+    }
+  },
+
+  "tab-list#pdp": {
+    "children": [
+      "tab-list.item#pdp1",
+      "tab-list.item#pdp2",
+      "tab-list.item#pdp3"
+    ],
+    "props":{
+      "blockClass": "list-tabs-home"
+    },
+    "title": "Lista Tab Menu"
+  },
+  "tab-list.item#pdp1": {
+    "props": {
+      "tabId": "tab01",
+      "label": "DESCRIPCIÓN DEL PRODUCTO",
+      "defaultActiveTab": true
+    },
+    "title": "Item 01"
+  },
+  "tab-list.item#pdp2": {
+    "props": {
+      "tabId": "tab02",
+      "label": "FICHA TECNICA"
+    },
+    "title": "Item 02"
+  },
+  "tab-list.item#pdp3": {
+    "props": {
+      "tabId": "tab03",
+      "label": "RESEÑAS DEL PRODUCTO"
+    },
+    "title": "Item 03"
+  },
+  "tab-content#pdp": {
+    "children": [
+      "tab-content.item#pdp1",
+      "tab-content.item#pdp2",
+      "tab-content.item#pdp3"
+    ],
+    "props":{
+      "blockClass": "content-tabs-home"
+    },
+    "title": "Lista Tab Conteúdo"
+  },
+  "tab-content.item#pdp1": {
+    "children": [
+      "product-description"
+    ],
+    "props": {
+      "tabId": "tab01"
+    },
+    "title": "Conteudo 01"
+  },
+  "tab-content.item#pdp2": {
+    "children": [
+      "product-specifications#product"
+    ],
+    "props": {
+      "tabId": "tab02"
+    },
+    "title": "Conteudo 02"
+  },
+  "tab-content.item#pdp3": {
+    "children": [
+      "product-reviews#prod-review"
+    ],
+    "props": {
+      "tabId": "tab03"
+    },
+    "title": "Conteudo 03"
+  },
+  "product-reviews#prod-review": {
+    "props": {
+      "blockClass": "row-reviews"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.header{
+  padding: 25px 0;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container::after,
+.header .container::before{
+  display: none;
+}
+
+.header .container a.logo img{
+  max-width: 250px;
+}
+
+.header .container #barProgress ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.header .container #barProgress ul li{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+li.item.active {
+  color: #034AA6;
+  text-decoration: underline;
+}
+
+.header .container #barProgress ul li::after{
+  content: "";
+  display: block;
+  margin: 0 15px;
+  width: 9px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.59274 12.157L7.24974 6.49999L1.59274 0.842987L0.885742 1.54999L5.83574 6.49999L0.885742 11.45L1.59274 12.157Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+
+.header .container #barProgress ul li.item-payment::after{
+  display: none;
+}
+
+footer{
+  background: #313131;
+}
+
+footer .container {
+display: flex;
+justify-content: center;
+padding: 30px 0;
+  color: white;
+}
+
+footer .payments {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .payments > span{
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+footer .payments > ul{
+  margin: 0px;
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+}
+
+.copyright {
+  padding: 15px 0;
+  background-color: #36a9e1;
+}
+
+.copyright .container{
+  text-align: center;
+}
+
+.copyright .container p{
+  margin: 0px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+/*------GENERALS-------*/
+
+.btn-success {
+  background: #FF0000;
+  border: 0!important;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.btn-success:hover{
+  background: #ff2525!important;
+}
+
+.summary-template-holder{
+  border: 1px solid #FF0000;
+}
+
+/*----EMPTY CART-----*/
+
+.empty-cart-content{
+  text-align: center;
+}
+
+
+@media(max-width: 1024px){
+  .header .container{
+      justify-content: center;
+  }
+  #barProgress{
+      display: none;
+  }
+}

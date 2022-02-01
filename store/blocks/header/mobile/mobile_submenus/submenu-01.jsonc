@@ -1,0 +1,29 @@
+{
+  "menu-item#mobile_departamento-01": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Acabados",
+        "text": "Acabados"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu.accordion#mobile_departamento-01"
+    ]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile_departamento-01":{
+    "children":[
+      "vtex.menu@2.x:menu#mobile_submenu-01"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_submenu-01":{
+    "props":{
+      "blockClass": "submenuAccordion",
+      "categoryId": 9,
+      "orientation": "vertical"
+    }
+  }
+}

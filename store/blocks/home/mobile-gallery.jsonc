@@ -1,0 +1,46 @@
+{
+  "flex-layout.row#mobile-gallery":{
+    "children":[
+      "flex-layout.col#mobile-subcol01-gallery"
+    ],
+    "props":{
+      "blockClass":["centralizer", "gallery", "line"],
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "title": "ROW - mobile gallery"
+  },
+  "flex-layout.col#mobile-subcol01-gallery":{
+    "children":[
+      "image#mobile-img-gallery-01",
+      "image#mobile-img-gallery-02",
+      "image#mobile-img-gallery-03"
+    ],
+    "props":{
+      "blockClass":["subcol01-gallery","subcol-galery"]
+    }
+  },
+  "image#mobile-img-gallery-01":{
+    "props":{
+      "src":"assets/banners/mobile-construcion.png",
+      "blockClass":"mobile-img-gallery-01"
+    }
+  },
+
+  "image#mobile-img-gallery-02":{
+    "props":{
+      "src":"assets/banners/mobile-herramientas.png",
+      "blockClass":"mobile-img-gallery-02"
+    }
+  },
+
+  "image#mobile-img-gallery-03":{
+    "props":{
+      "src":"assets/banners/mobile-pisos-y-azulejos.jpg",
+      "blockClass":"mobile-img-gallery-03"
+    }
+  }
+}

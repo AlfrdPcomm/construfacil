@@ -1,0 +1,105 @@
+{
+  "flex-layout.col#col03-footer":{
+    "children": [
+      "logo#footer",
+      "flex-layout.row#social"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "width": "49%",
+      "blockClass": ["footer-menu-desktop-col","col03"]
+    }
+  },
+
+  "logo#footer": {
+    "props": {
+      "blockClass": "logo-footer",
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo-construfacil-white.png",
+      "width": "350"
+    }
+  },
+
+  "flex-layout.row#social":{
+    "children": [
+      "image#footer-facebook",
+      "image#footer-linkedin",
+      "image#footer-tiktok",
+      "image#footer-instagram",
+      "image#footer-youtube"
+    ],
+    "props": {
+      "blockClass": ["social-footer","centralizer"],
+      "preventHorizontalStretch":true
+    }
+  },
+
+  "image#footer-facebook":{
+    "props":{
+      "src": "assets/icons/icon-facebook.svg",
+      "blockClass": ["social-footer-icon","icon-footer-facebook"],
+      "link":{
+        "url":"https://www.facebook.com",
+        "newTab": true,
+        "attributeTitle": "Facebook"
+      }
+    },
+    "title": "Link Facebook"
+  },
+
+
+  "image#footer-linkedin":{
+    "props":{
+      "src": "assets/icons/icon-linkedin.svg",
+      "blockClass": ["social-footer-icon","icon-footer-linkedin"],
+      "link":{
+        "url":"https://www.linkedin.com",
+        "newTab": true,
+        "attributeTitle": "Linkedin"
+      }
+    },
+    "title": "Link Linkedin"
+  },
+
+  "image#footer-tiktok":{
+    "props":{
+      "src": "assets/icons/icon-tiktok.svg",
+      "blockClass": ["social-footer-icon","icon-footer-tiktok"],
+      "link":{
+        "url":"https://www.tiktok.com",
+        "newTab": true,
+        "attributeTitle": "tiktok"
+      }
+    },
+    "title": "Link tiktok"
+  },
+
+  "image#footer-instagram":{
+    "props":{
+      "src": "assets/icons/icon-instagram.svg",
+      "blockClass": ["social-footer-icon","icon-footer-instagram"],
+      "link":{
+        "url":"https://www.instagram.com",
+        "newTab": true,
+        "attributeTitle": "Instagram"
+      }
+    },
+    "title": "Link Instagram"
+  },
+
+  "image#footer-youtube":{
+    "props":{
+      "src": "assets/icons/icon-youtube.svg",
+      "blockClass": ["social-footer-icon","icon-footer-youtube"],
+      "link":{
+        "url":"https://www.youtube.com",
+        "newTab": true,
+        "attributeTitle": "youtube"
+      }
+    },
+    "title": "Link youtube"
+  }
+
+
+}
